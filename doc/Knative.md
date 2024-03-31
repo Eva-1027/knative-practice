@@ -5,10 +5,11 @@
 - 以K8S扩展的形式提供了一整套中间件，可以运行任何无状态容器应用
 - 容器是将操作系统层虚拟化，虚拟机是将硬件虚拟化
 - 环境中通常通过部署sidecar来提供对Istio的支持
-- minikube start
+- minikube start + knative quick start 最后还是使用了这样的安装方式
 - *knative serving 组件* 为k8s上的服务提供了自动缩扩容的功能，通过autoscaler的功能实现，监控pod的流量，并根据算法来控制pod的数量
 - *knative eventing 组件* （作用待写）
 - 可观察性组件：普罗米修斯，grafana，EFK，Jaeger
 - 可以通过istio operator去安装istio
 - k get ksvc
 - cluster local gateway
+- Learning guide：https://knative.dev/docs/getting-started/first-autoscale/#list-your-knative-service
